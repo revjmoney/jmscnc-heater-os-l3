@@ -14,7 +14,7 @@ By [Rev. J. Money](https://jmscnc.com) / **JMSCNC**. Version **0.1.3**.
 [![gitleaks](https://github.com/revjmoney/jmscnc-heater-os-l3/actions/workflows/gitleaks.yml/badge.svg)](https://github.com/revjmoney/jmscnc-heater-os-l3/actions/workflows/gitleaks.yml)
 
 > **Status: software-tested, not yet hardware-qualified on a second unit.** The
-> original L3 Lab 0.1.3 was built and ran on the author's own L3+ (dashboard,
+> earlier 0.1.3 build was made and ran on the author's own L3+ (dashboard,
 > SSH, mining and both fans came back after reboot). This public release has the
 > same code plus the rebrand and the dev-support slice. Treat NAND flashing as
 > brick-risk and keep a recovery method ready. See [Safety](#safety-and-recovery).
@@ -23,6 +23,18 @@ By [Rev. J. Money](https://jmscnc.com) / **JMSCNC**. Version **0.1.3**.
 - The stock `cgminer` mining binary is kept **byte-for-byte unchanged**.
 - The only outbound mining connection this firmware adds is the optional,
   opt-out **developer-support slice** (1% by default, see below).
+
+---
+
+## Screenshots
+
+| Overview | Developer support |
+|---|---|
+| [![Overview](docs/screenshots/overview.jpg)](docs/screenshots/overview.jpg) | [![Developer support](docs/screenshots/dev-support.jpg)](docs/screenshots/dev-support.jpg) |
+| **Hashboards & ASIC map** | **Mining settings** |
+| [![Hashboards](docs/screenshots/hashboards.jpg)](docs/screenshots/hashboards.jpg) | [![Mining settings](docs/screenshots/mining-settings.jpg)](docs/screenshots/mining-settings.jpg) |
+
+<sub>Shown with example mining data (synthetic pool, worker, and metrics); no real account or network details.</sub>
 
 ---
 
