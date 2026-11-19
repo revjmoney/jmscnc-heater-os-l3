@@ -1,0 +1,12 @@
+{
+  "reference": "Python hashlib.scrypt / OpenSSL",
+  "vectors": 67,
+  "comparisons": 201,
+  "result": "All outputs match; zero, poisoned and uninitialized scratch",
+  "platform": "Windows x64 MSVC /O2; controller ARM performance unmeasured",
+  "zeroed_seconds_per_1000": 0.4984103001188487,
+  "uninitialized_seconds_per_1000": 0.4992716000415385,
+  "host_time_ratio": 0.9982748870101601,
+  "asic_hashrate_gain": "Not measured; this is share-validation CPU work, not ASIC mining",
+  "firmware_inclusion": "Not included; stock CGMiner retained"
+}

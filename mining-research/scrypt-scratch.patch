@@ -1,0 +1,11 @@
+--- a/scrypt.c
++++ b/scrypt.c
+@@ -413,7 +413,7 @@
+ {
+ 	uint32_t data[20];
+ 	// char *scratchbuf = NULL;
+-	char scratchbuf[SCRATCHBUF_SIZE] = "";
++	char scratchbuf[SCRATCHBUF_SIZE];
+ 	uint32_t *nonce = (uint32_t *)(work->data + 76);
+ 	uint32_t *ohash = (uint32_t *)(work->hash);
+ 

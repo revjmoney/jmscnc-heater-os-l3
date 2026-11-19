@@ -1,0 +1,1160 @@
+[
+  {
+    "name": "anu-freq",
+    "kind": "number",
+    "description": "Set AntminerU1/2 frequency in MHz, range 125-500",
+    "group": "Mining",
+    "source": "Bitmain source",
+    "read_only": false,
+    "available": false,
+    "min": 125,
+    "max": 500
+  },
+  {
+    "name": "api-allow",
+    "kind": "string",
+    "description": "Allow API access only to the given list of [G:]IP[/Prefix] addresses[/subnets]",
+    "group": "API",
+    "source": "Bitmain source",
+    "read_only": true,
+    "available": false
+  },
+  {
+    "name": "api-description",
+    "kind": "string",
+    "description": "Description placed in the API status header, default: cgminer version",
+    "group": "API",
+    "source": "Bitmain source",
+    "read_only": false,
+    "available": false
+  },
+  {
+    "name": "api-groups",
+    "kind": "string",
+    "description": "API one letter groups G:cmd:cmd[,P:cmd:*...] defining the cmds a groups can use",
+    "group": "API",
+    "source": "Bitmain source",
+    "read_only": true,
+    "available": false
+  },
+  {
+    "name": "api-host",
+    "kind": "string",
+    "description": "Specify API listen address, default: 0.0.0.0",
+    "group": "API",
+    "source": "Bitmain source",
+    "read_only": true,
+    "available": false
+  },
+  {
+    "name": "api-listen",
+    "kind": "boolean",
+    "description": "Enable API, default: disabled",
+    "group": "API",
+    "source": "Bitmain source",
+    "read_only": true,
+    "available": false
+  },
+  {
+    "name": "api-mcast",
+    "kind": "boolean",
+    "description": "Enable API Multicast listener, default: disabled",
+    "group": "API",
+    "source": "Bitmain source",
+    "read_only": false,
+    "available": false
+  },
+  {
+    "name": "api-mcast-addr",
+    "kind": "string",
+    "description": "API Multicast listen address",
+    "group": "API",
+    "source": "Bitmain source",
+    "read_only": false,
+    "available": false
+  },
+  {
+    "name": "api-mcast-code",
+    "kind": "string",
+    "description": "Code expected in the API Multicast message, don't use '-'",
+    "group": "API",
+    "source": "Bitmain source",
+    "read_only": false,
+    "available": false
+  },
+  {
+    "name": "api-mcast-des",
+    "kind": "string",
+    "description": "Description appended to the API Multicast reply, default: ''",
+    "group": "API",
+    "source": "Bitmain source",
+    "read_only": false,
+    "available": false
+  },
+  {
+    "name": "api-mcast-port",
+    "kind": "integer",
+    "description": "API Multicast listen port",
+    "group": "API",
+    "source": "Bitmain source",
+    "read_only": false,
+    "available": false,
+    "min": 1,
+    "max": 65535
+  },
+  {
+    "name": "api-network",
+    "kind": "boolean",
+    "description": "Allow API (if enabled) to listen on/for any address, default: only 127.0.0.1",
+    "group": "API",
+    "source": "Bitmain source",
+    "read_only": true,
+    "available": false
+  },
+  {
+    "name": "api-port",
+    "kind": "integer",
+    "description": "Port number of miner API",
+    "group": "API",
+    "source": "Bitmain source",
+    "read_only": true,
+    "available": false,
+    "min": 1,
+    "max": 65535
+  },
+  {
+    "name": "balance",
+    "kind": "boolean",
+    "description": "Change multipool strategy from failover to even share balance",
+    "group": "Mining",
+    "source": "Bitmain source",
+    "read_only": false,
+    "available": false
+  },
+  {
+    "name": "benchfile",
+    "kind": "string",
+    "description": "Run cgminer in benchmark mode using a work file - produces no shares",
+    "group": "Mining",
+    "source": "Bitmain source",
+    "read_only": false,
+    "available": false
+  },
+  {
+    "name": "benchfile-display",
+    "kind": "boolean",
+    "description": "Display each benchfile nonce found",
+    "group": "Mining",
+    "source": "Bitmain source",
+    "read_only": false,
+    "available": false
+  },
+  {
+    "name": "benchmark",
+    "kind": "boolean",
+    "description": "Run cgminer in benchmark mode - produces no shares",
+    "group": "Mining",
+    "source": "Bitmain source",
+    "read_only": false,
+    "available": false
+  },
+  {
+    "name": "bet-clk",
+    "kind": "string",
+    "description": "Set Block Erupter clock",
+    "group": "Mining",
+    "source": "Bitmain source",
+    "read_only": false,
+    "available": false
+  },
+  {
+    "name": "bitmain-auto",
+    "kind": "boolean",
+    "description": "Adjust bitmain overclock frequency dynamically for best hashrate",
+    "group": "Hardware",
+    "source": "Bitmain source",
+    "read_only": false,
+    "available": false
+  },
+  {
+    "name": "bitmain-checkall",
+    "kind": "boolean",
+    "description": "Set bitmain check all",
+    "group": "Hardware",
+    "source": "Bitmain source",
+    "read_only": false,
+    "available": false
+  },
+  {
+    "name": "bitmain-checkn2diff",
+    "kind": "boolean",
+    "description": "Set bitmain check not 2 pow diff",
+    "group": "Hardware",
+    "source": "Bitmain source",
+    "read_only": false,
+    "available": false
+  },
+  {
+    "name": "bitmain-core-temp",
+    "kind": "integer",
+    "description": "Select core temp",
+    "group": "Hardware",
+    "source": "Bitmain source",
+    "read_only": false,
+    "available": false,
+    "min": 0,
+    "max": 100
+  },
+  {
+    "name": "bitmain-cutoff",
+    "kind": "integer",
+    "description": "Set bitmain overheat cut off temperature",
+    "group": "Hardware",
+    "source": "Bitmain source",
+    "read_only": false,
+    "available": false,
+    "min": 0,
+    "max": 100
+  },
+  {
+    "name": "bitmain-dev",
+    "kind": "string",
+    "description": "Set bitmain device (default: usb mode, other windows: COM1 or linux: /dev/bitmain-asic)",
+    "group": "Hardware",
+    "source": "Bitmain source",
+    "read_only": false,
+    "available": false
+  },
+  {
+    "name": "bitmain-fan",
+    "kind": "string",
+    "description": "Set fanspeed percentage for bitmain, single value or range (default: 20-100)",
+    "group": "Hardware",
+    "source": "Bitmain source",
+    "read_only": false,
+    "available": false
+  },
+  {
+    "name": "bitmain-fan-ctrl",
+    "kind": "boolean",
+    "description": "Enable bitmain miner fan controlling",
+    "group": "Hardware",
+    "source": "Bitmain source",
+    "read_only": false,
+    "available": false
+  },
+  {
+    "name": "bitmain-fan-pwm",
+    "kind": "integer",
+    "description": "Set bitmain fan pwm percentage 0~100",
+    "group": "Hardware",
+    "source": "Bitmain source",
+    "read_only": false,
+    "available": false,
+    "min": 0,
+    "max": 100
+  },
+  {
+    "name": "bitmain-freq",
+    "kind": "integer",
+    "description": "Set frequency",
+    "group": "Hardware",
+    "source": "Bitmain source",
+    "read_only": false,
+    "available": false,
+    "min": 0,
+    "max": 9999
+  },
+  {
+    "name": "bitmain-homemode",
+    "kind": "boolean",
+    "description": "Set bitmain miner to home mode",
+    "group": "Hardware",
+    "source": "Bitmain source",
+    "read_only": false,
+    "available": false
+  },
+  {
+    "name": "bitmain-hwerror",
+    "kind": "boolean",
+    "description": "Set bitmain device detect hardware error",
+    "group": "Hardware",
+    "source": "Bitmain source",
+    "read_only": false,
+    "available": false
+  },
+  {
+    "name": "bitmain-nobeeper",
+    "kind": "boolean",
+    "description": "Set bitmain beeper no ringing",
+    "group": "Hardware",
+    "source": "Bitmain source",
+    "read_only": false,
+    "available": false
+  },
+  {
+    "name": "bitmain-notempoverctrl",
+    "kind": "boolean",
+    "description": "Set bitmain not stop runing when temprerature is over 80 degree Celsius",
+    "group": "Hardware",
+    "source": "Bitmain source",
+    "read_only": true,
+    "available": false
+  },
+  {
+    "name": "bitmain-options",
+    "kind": "string",
+    "description": "Set bitmain options baud:miners:asic:timeout:freq",
+    "group": "Hardware",
+    "source": "Bitmain source",
+    "read_only": false,
+    "available": false
+  },
+  {
+    "name": "bitmain-temp",
+    "kind": "integer",
+    "description": "Set bitmain target temperature",
+    "group": "Hardware",
+    "source": "Bitmain source",
+    "read_only": false,
+    "available": false,
+    "min": 0,
+    "max": 100
+  },
+  {
+    "name": "bitmain-use-vil",
+    "kind": "boolean",
+    "description": "Set bitmain miner use vil mode",
+    "group": "Hardware",
+    "source": "Bitmain source",
+    "read_only": false,
+    "available": false
+  },
+  {
+    "name": "bitmain-voltage",
+    "kind": "integer",
+    "description": "Set voltage",
+    "group": "Hardware",
+    "source": "Bitmain source",
+    "read_only": false,
+    "available": false,
+    "min": 0,
+    "max": 9999
+  },
+  {
+    "name": "bitmine-a1-options",
+    "kind": "string",
+    "description": "Bitmine A1 options ref_clk_khz:sys_clk_khz:spi_clk_khz:override_chip_num",
+    "group": "Mining",
+    "source": "Bitmain source",
+    "read_only": false,
+    "available": false
+  },
+  {
+    "name": "btc-address",
+    "kind": "string",
+    "description": "Set bitcoin target address when solo mining to bitcoind (mandatory)",
+    "group": "Mining",
+    "source": "Bitmain source",
+    "read_only": false,
+    "available": false
+  },
+  {
+    "name": "btc-sig",
+    "kind": "string",
+    "description": "Set signature to add to coinbase when solo mining (optional)",
+    "group": "Mining",
+    "source": "Bitmain source",
+    "read_only": false,
+    "available": false
+  },
+  {
+    "name": "bxf-bits",
+    "kind": "integer",
+    "description": "Set max BXF/HXF bits for overclocking",
+    "group": "Mining",
+    "source": "Bitmain source",
+    "read_only": false,
+    "available": false,
+    "min": 32,
+    "max": 63
+  },
+  {
+    "name": "bxf-debug",
+    "kind": "integer",
+    "description": "Hidden source option; semantics depend on the firmware build.",
+    "group": "Diagnostics",
+    "source": "Bitmain source",
+    "read_only": false,
+    "available": false,
+    "min": 0,
+    "max": 4
+  },
+  {
+    "name": "bxf-temp-target",
+    "kind": "integer",
+    "description": "Set target temperature for BXF/HXF devices",
+    "group": "Mining",
+    "source": "Bitmain source",
+    "read_only": false,
+    "available": false,
+    "min": 0,
+    "max": 200
+  },
+  {
+    "name": "bxm-bits",
+    "kind": "integer",
+    "description": "Set BXM bits for overclocking",
+    "group": "Mining",
+    "source": "Bitmain source",
+    "read_only": false,
+    "available": false,
+    "min": 0,
+    "max": 100
+  },
+  {
+    "name": "compact",
+    "kind": "boolean",
+    "description": "Use compact display without per device statistics",
+    "group": "Mining",
+    "source": "Bitmain source",
+    "read_only": false,
+    "available": false
+  },
+  {
+    "name": "config",
+    "kind": "string",
+    "description": "Load a JSON-format configuration file\\n See example.conf for an example configuration.",
+    "group": "Mining",
+    "source": "Bitmain source",
+    "read_only": true,
+    "available": false
+  },
+  {
+    "name": "cta-load",
+    "kind": "integer",
+    "description": "Set load for CTA devices, 0-255 range",
+    "group": "Mining",
+    "source": "Bitmain source",
+    "read_only": false,
+    "available": false,
+    "min": 0,
+    "max": 255
+  },
+  {
+    "name": "debug",
+    "kind": "boolean",
+    "description": "Enable debug output",
+    "group": "Diagnostics",
+    "source": "Bitmain source",
+    "read_only": false,
+    "available": false
+  },
+  {
+    "name": "default-config",
+    "kind": "string",
+    "description": "Specify the filename of the default config file\\n Loaded at start and used when saving without a name.",
+    "group": "Mining",
+    "source": "Bitmain source",
+    "read_only": true,
+    "available": false
+  },
+  {
+    "name": "disable-rejecting",
+    "kind": "boolean",
+    "description": "Automatically disable pools that continually reject shares",
+    "group": "Mining",
+    "source": "Bitmain source",
+    "read_only": false,
+    "available": false
+  },
+  {
+    "name": "expiry",
+    "kind": "integer",
+    "description": "Upper bound on how many seconds after getting work we consider a share from it stale",
+    "group": "Mining",
+    "source": "Bitmain source",
+    "read_only": false,
+    "available": false,
+    "min": 0,
+    "max": 9999
+  },
+  {
+    "name": "failover-only",
+    "kind": "boolean",
+    "description": "Don't leak work to backup pools when primary pool is lagging",
+    "group": "Mining",
+    "source": "Bitmain source",
+    "read_only": false,
+    "available": false
+  },
+  {
+    "name": "fix-protocol",
+    "kind": "boolean",
+    "description": "Do not redirect to a different getwork protocol (eg. stratum)",
+    "group": "Mining",
+    "source": "Bitmain source",
+    "read_only": false,
+    "available": false
+  },
+  {
+    "name": "help",
+    "kind": "boolean",
+    "description": "Print this message",
+    "group": "Mining",
+    "source": "Bitmain source",
+    "read_only": false,
+    "available": false
+  },
+  {
+    "name": "hotplug",
+    "kind": "integer",
+    "description": "Seconds between hotplug checks (0 means never check)",
+    "group": "Mining",
+    "source": "Bitmain source",
+    "read_only": false,
+    "available": false,
+    "min": 0,
+    "max": 9999
+  },
+  {
+    "name": "hro-freq",
+    "kind": "string",
+    "description": "Set the hashratio clock frequency",
+    "group": "Mining",
+    "source": "Bitmain source",
+    "read_only": false,
+    "available": false
+  },
+  {
+    "name": "kernel-path",
+    "kind": "string",
+    "description": "Specify a path to where bitstream files are",
+    "group": "Mining",
+    "source": "Bitmain source",
+    "read_only": false,
+    "available": false
+  },
+  {
+    "name": "load-balance",
+    "kind": "boolean",
+    "description": "Change multipool strategy from failover to quota based balance",
+    "group": "Mining",
+    "source": "Bitmain source",
+    "read_only": false,
+    "available": false
+  },
+  {
+    "name": "log",
+    "kind": "integer",
+    "description": "Interval in seconds between log output",
+    "group": "Diagnostics",
+    "source": "Bitmain source",
+    "read_only": false,
+    "available": false,
+    "min": 0,
+    "max": 9999
+  },
+  {
+    "name": "logfile",
+    "kind": "string",
+    "description": "Set log file, default: cgminer.log",
+    "group": "Diagnostics",
+    "source": "Bitmain source",
+    "read_only": false,
+    "available": false
+  },
+  {
+    "name": "logfile-openflag",
+    "kind": "string",
+    "description": "Set log file open flag, default: a+",
+    "group": "Diagnostics",
+    "source": "Bitmain source",
+    "read_only": false,
+    "available": false
+  },
+  {
+    "name": "logwork",
+    "kind": "string",
+    "description": "Set log work file path, following: minertext",
+    "group": "Diagnostics",
+    "source": "Bitmain source",
+    "read_only": false,
+    "available": false
+  },
+  {
+    "name": "logwork-asicnum",
+    "kind": "string",
+    "description": "Set log work asic num, following: 1, 32, 64",
+    "group": "Diagnostics",
+    "source": "Bitmain source",
+    "read_only": false,
+    "available": false
+  },
+  {
+    "name": "logwork-diff",
+    "kind": "boolean",
+    "description": "Allow log work diff",
+    "group": "Diagnostics",
+    "source": "Bitmain source",
+    "read_only": false,
+    "available": false
+  },
+  {
+    "name": "lowmem",
+    "kind": "boolean",
+    "description": "Minimise caching of shares for low memory applications",
+    "group": "Mining",
+    "source": "Bitmain source",
+    "read_only": false,
+    "available": false
+  },
+  {
+    "name": "minion-chipreport",
+    "kind": "integer",
+    "description": "Seconds to report chip 5min hashrate, range 0-100 (default: 0=disabled)",
+    "group": "Mining",
+    "source": "Bitmain source",
+    "read_only": false,
+    "available": false,
+    "min": 0,
+    "max": 100
+  },
+  {
+    "name": "minion-cores",
+    "kind": "string",
+    "description": "Hidden source option; semantics depend on the firmware build.",
+    "group": "Mining",
+    "source": "Bitmain source",
+    "read_only": false,
+    "available": false
+  },
+  {
+    "name": "minion-extra",
+    "kind": "boolean",
+    "description": "Hidden source option; semantics depend on the firmware build.",
+    "group": "Mining",
+    "source": "Bitmain source",
+    "read_only": false,
+    "available": false
+  },
+  {
+    "name": "minion-freq",
+    "kind": "string",
+    "description": "Set minion chip frequencies in MHz, single value or comma list, range 100-1400 (default: 1200)",
+    "group": "Mining",
+    "source": "Bitmain source",
+    "read_only": false,
+    "available": false
+  },
+  {
+    "name": "minion-freqchange",
+    "kind": "integer",
+    "description": "Millisecond total time to do frequency changes (default: 1000)",
+    "group": "Mining",
+    "source": "Bitmain source",
+    "read_only": false,
+    "available": false,
+    "min": 0,
+    "max": 9999
+  },
+  {
+    "name": "minion-freqpercent",
+    "kind": "integer",
+    "description": "Percentage to use when starting up a chip (default: 70%)",
+    "group": "Mining",
+    "source": "Bitmain source",
+    "read_only": false,
+    "available": false,
+    "min": 0,
+    "max": 100
+  },
+  {
+    "name": "minion-idlecount",
+    "kind": "boolean",
+    "description": "Report when IdleCount is >0 or changes",
+    "group": "Mining",
+    "source": "Bitmain source",
+    "read_only": false,
+    "available": false
+  },
+  {
+    "name": "minion-ledcount",
+    "kind": "integer",
+    "description": "Turn off led when more than this many chips below the ledlimit (default: 0)",
+    "group": "Mining",
+    "source": "Bitmain source",
+    "read_only": false,
+    "available": false,
+    "min": 0,
+    "max": 100
+  },
+  {
+    "name": "minion-ledlimit",
+    "kind": "integer",
+    "description": "Turn off led when chips GHs are below this (default: 90)",
+    "group": "Mining",
+    "source": "Bitmain source",
+    "read_only": false,
+    "available": false,
+    "min": 0,
+    "max": 200
+  },
+  {
+    "name": "minion-noautofreq",
+    "kind": "boolean",
+    "description": "Disable automatic frequency adjustment",
+    "group": "Mining",
+    "source": "Bitmain source",
+    "read_only": false,
+    "available": false
+  },
+  {
+    "name": "minion-overheat",
+    "kind": "boolean",
+    "description": "Enable directly halting any chip when the status exceeds 100C",
+    "group": "Mining",
+    "source": "Bitmain source",
+    "read_only": false,
+    "available": false
+  },
+  {
+    "name": "minion-spidelay",
+    "kind": "integer",
+    "description": "Add a delay in microseconds after each SPI I/O",
+    "group": "Mining",
+    "source": "Bitmain source",
+    "read_only": false,
+    "available": false,
+    "min": 0,
+    "max": 9999
+  },
+  {
+    "name": "minion-spireset",
+    "kind": "string",
+    "description": "SPI regular reset: iNNN for I/O count or sNNN for seconds - 0 means none",
+    "group": "Mining",
+    "source": "Bitmain source",
+    "read_only": false,
+    "available": false
+  },
+  {
+    "name": "minion-spisleep",
+    "kind": "integer",
+    "description": "Sleep time in milliseconds when doing an SPI reset",
+    "group": "Mining",
+    "source": "Bitmain source",
+    "read_only": false,
+    "available": false,
+    "min": 0,
+    "max": 9999
+  },
+  {
+    "name": "minion-spiusec",
+    "kind": "integer",
+    "description": "Hidden source option; semantics depend on the firmware build.",
+    "group": "Mining",
+    "source": "Bitmain source",
+    "read_only": false,
+    "available": false,
+    "min": 0,
+    "max": 9999
+  },
+  {
+    "name": "minion-temp",
+    "kind": "string",
+    "description": "Set minion chip temperature threshold, single value or comma list, range 120-160 (default: 135C)",
+    "group": "Mining",
+    "source": "Bitmain source",
+    "read_only": false,
+    "available": false
+  },
+  {
+    "name": "monitor",
+    "kind": "string",
+    "description": "Use custom pipe cmd for output messages",
+    "group": "Mining",
+    "source": "Bitmain source",
+    "read_only": true,
+    "available": false
+  },
+  {
+    "name": "multi-version",
+    "kind": "string",
+    "description": "Multi version",
+    "group": "Mining",
+    "source": "Bitmain source",
+    "read_only": false,
+    "available": false
+  },
+  {
+    "name": "ndevs",
+    "kind": "boolean",
+    "description": "Display all USB devices and exit",
+    "group": "Mining",
+    "source": "Bitmain source",
+    "read_only": false,
+    "available": false
+  },
+  {
+    "name": "net-delay",
+    "kind": "boolean",
+    "description": "Impose small delays in networking to not overload slow routers",
+    "group": "Mining",
+    "source": "Bitmain source",
+    "read_only": false,
+    "available": false
+  },
+  {
+    "name": "nfu-bits",
+    "kind": "integer",
+    "description": "Set nanofury bits for overclocking, range 32-63",
+    "group": "Mining",
+    "source": "Bitmain source",
+    "read_only": false,
+    "available": false,
+    "min": 32,
+    "max": 63
+  },
+  {
+    "name": "no-pool-disable",
+    "kind": "boolean",
+    "description": "Hidden source option; semantics depend on the firmware build.",
+    "group": "Mining",
+    "source": "Bitmain source",
+    "read_only": false,
+    "available": false
+  },
+  {
+    "name": "no-submit-stale",
+    "kind": "boolean",
+    "description": "Don't submit shares if they are detected as stale",
+    "group": "Mining",
+    "source": "Bitmain source",
+    "read_only": false,
+    "available": false
+  },
+  {
+    "name": "osm-led-mode",
+    "kind": "integer",
+    "description": "Set LED mode for OneStringMiner devices",
+    "group": "Mining",
+    "source": "Bitmain source",
+    "read_only": false,
+    "available": false,
+    "min": 0,
+    "max": 4
+  },
+  {
+    "name": "pass",
+    "kind": "string",
+    "description": "Password for bitcoin JSON-RPC server",
+    "group": "Mining",
+    "source": "Bitmain source",
+    "read_only": false,
+    "available": false
+  },
+  {
+    "name": "per-device-stats",
+    "kind": "boolean",
+    "description": "Force verbose mode and output per-device statistics",
+    "group": "Mining",
+    "source": "Bitmain source",
+    "read_only": false,
+    "available": false
+  },
+  {
+    "name": "pools",
+    "kind": "string",
+    "description": "Hidden source option; semantics depend on the firmware build.",
+    "group": "Mining",
+    "source": "Bitmain source",
+    "read_only": false,
+    "available": false
+  },
+  {
+    "name": "protocol-dump",
+    "kind": "boolean",
+    "description": "Verbose dump of protocol-level activities",
+    "group": "Mining",
+    "source": "Bitmain source",
+    "read_only": false,
+    "available": false
+  },
+  {
+    "name": "ps-load",
+    "kind": "integer",
+    "description": "Set power supply load for CTA devices, 0-100 range",
+    "group": "Mining",
+    "source": "Bitmain source",
+    "read_only": false,
+    "available": false,
+    "min": 0,
+    "max": 100
+  },
+  {
+    "name": "queue",
+    "kind": "integer",
+    "description": "Maximum number of work items to have queued",
+    "group": "Mining",
+    "source": "Bitmain source",
+    "read_only": false,
+    "available": false,
+    "min": 0,
+    "max": 9999
+  },
+  {
+    "name": "quiet",
+    "kind": "boolean",
+    "description": "Disable logging output, display status and errors",
+    "group": "Diagnostics",
+    "source": "Bitmain source",
+    "read_only": false,
+    "available": false
+  },
+  {
+    "name": "quota",
+    "kind": "string",
+    "description": "quota;URL combination for server with load-balance strategy quotas",
+    "group": "Mining",
+    "source": "Bitmain source",
+    "read_only": false,
+    "available": false
+  },
+  {
+    "name": "real-quiet",
+    "kind": "boolean",
+    "description": "Disable all output",
+    "group": "Diagnostics",
+    "source": "Bitmain source",
+    "read_only": false,
+    "available": false
+  },
+  {
+    "name": "retries",
+    "kind": "string",
+    "description": "Hidden source option; semantics depend on the firmware build.",
+    "group": "Mining",
+    "source": "Bitmain source",
+    "read_only": false,
+    "available": false
+  },
+  {
+    "name": "retry-pause",
+    "kind": "string",
+    "description": "Hidden source option; semantics depend on the firmware build.",
+    "group": "Mining",
+    "source": "Bitmain source",
+    "read_only": false,
+    "available": false
+  },
+  {
+    "name": "rotate",
+    "kind": "string",
+    "description": "Change multipool strategy from failover to regularly rotate at N minutes",
+    "group": "Mining",
+    "source": "Bitmain source",
+    "read_only": false,
+    "available": false
+  },
+  {
+    "name": "round-robin",
+    "kind": "boolean",
+    "description": "Change multipool strategy from failover to round robin on failure",
+    "group": "Mining",
+    "source": "Bitmain source",
+    "read_only": false,
+    "available": false
+  },
+  {
+    "name": "scan-serial",
+    "kind": "string",
+    "description": "Serial port to probe for Serial FPGA Mining device",
+    "group": "Mining",
+    "source": "Bitmain source",
+    "read_only": false,
+    "available": false
+  },
+  {
+    "name": "scan-time",
+    "kind": "integer",
+    "description": "Upper bound on time spent scanning current work, in seconds",
+    "group": "Mining",
+    "source": "Bitmain source",
+    "read_only": false,
+    "available": false,
+    "min": 0,
+    "max": 9999
+  },
+  {
+    "name": "sched-start",
+    "kind": "string",
+    "description": "Set a time of day in HH:MM to start mining (a once off without a stop time)",
+    "group": "Schedule",
+    "source": "Bitmain source",
+    "read_only": false,
+    "available": false
+  },
+  {
+    "name": "sched-stop",
+    "kind": "string",
+    "description": "Set a time of day in HH:MM to stop mining (will quit without a start time)",
+    "group": "Schedule",
+    "source": "Bitmain source",
+    "read_only": false,
+    "available": false
+  },
+  {
+    "name": "scrypt",
+    "kind": "boolean",
+    "description": "Use the scrypt algorithm for mining (litecoin only)",
+    "group": "Mining",
+    "source": "Bitmain source",
+    "read_only": false,
+    "available": false
+  },
+  {
+    "name": "sharelog",
+    "kind": "string",
+    "description": "Append share log to file",
+    "group": "Mining",
+    "source": "Bitmain source",
+    "read_only": false,
+    "available": false
+  },
+  {
+    "name": "shares",
+    "kind": "string",
+    "description": "Quit after mining N shares (default: unlimited)",
+    "group": "Mining",
+    "source": "Bitmain source",
+    "read_only": false,
+    "available": false
+  },
+  {
+    "name": "socks-proxy",
+    "kind": "string",
+    "description": "Set socks4 proxy (host:port)",
+    "group": "Mining",
+    "source": "Bitmain source",
+    "read_only": false,
+    "available": false
+  },
+  {
+    "name": "suggest-diff",
+    "kind": "string",
+    "description": "Suggest miner difficulty for pool to user (default: none)",
+    "group": "Mining",
+    "source": "Bitmain source",
+    "read_only": false,
+    "available": false
+  },
+  {
+    "name": "syslog",
+    "kind": "boolean",
+    "description": "Use system log for output messages (default: standard error)",
+    "group": "Mining",
+    "source": "Bitmain source",
+    "read_only": false,
+    "available": false
+  },
+  {
+    "name": "temp-cutoff",
+    "kind": "string",
+    "description": "Temperature where a device will be automatically disabled, one value or comma separated list",
+    "group": "Mining",
+    "source": "Bitmain source",
+    "read_only": false,
+    "available": false
+  },
+  {
+    "name": "text-only",
+    "kind": "boolean",
+    "description": "Disable ncurses formatted screen output",
+    "group": "Mining",
+    "source": "Bitmain source",
+    "read_only": false,
+    "available": false
+  },
+  {
+    "name": "url",
+    "kind": "string",
+    "description": "URL for bitcoin JSON-RPC server",
+    "group": "Mining",
+    "source": "Bitmain source",
+    "read_only": false,
+    "available": false
+  },
+  {
+    "name": "usb",
+    "kind": "string",
+    "description": "USB device selection",
+    "group": "Mining",
+    "source": "Bitmain source",
+    "read_only": false,
+    "available": false
+  },
+  {
+    "name": "user",
+    "kind": "string",
+    "description": "Username for bitcoin JSON-RPC server",
+    "group": "Mining",
+    "source": "Bitmain source",
+    "read_only": false,
+    "available": false
+  },
+  {
+    "name": "userpass",
+    "kind": "string",
+    "description": "Username:Password pair for bitcoin JSON-RPC server",
+    "group": "Mining",
+    "source": "Bitmain source",
+    "read_only": false,
+    "available": false
+  },
+  {
+    "name": "verbose",
+    "kind": "boolean",
+    "description": "Log verbose output to stderr as well as status output",
+    "group": "Diagnostics",
+    "source": "Bitmain source",
+    "read_only": false,
+    "available": false
+  },
+  {
+    "name": "version",
+    "kind": "boolean",
+    "description": "Display version and exit",
+    "group": "Mining",
+    "source": "Bitmain source",
+    "read_only": false,
+    "available": false
+  },
+  {
+    "name": "version-file",
+    "kind": "string",
+    "description": "Set miner version file",
+    "group": "Mining",
+    "source": "Bitmain source",
+    "read_only": true,
+    "available": false
+  },
+  {
+    "name": "widescreen",
+    "kind": "boolean",
+    "description": "Use extra wide display without toggling",
+    "group": "Mining",
+    "source": "Bitmain source",
+    "read_only": false,
+    "available": false
+  },
+  {
+    "name": "worktime",
+    "kind": "boolean",
+    "description": "Display extra work time debug information",
+    "group": "Mining",
+    "source": "Bitmain source",
+    "read_only": false,
+    "available": false
+  }
+]
